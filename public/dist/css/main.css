@@ -1,0 +1,13 @@
+
+/*Стили для подложки перемешаемого контейнера*/
+.ui-state-highlight {
+    margin-top: 1.25rem;
+    border: 2px;
+    background: white;
+    padding: 20px 20px;
+    height: 74px;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color: #1d40b0;
+}
+

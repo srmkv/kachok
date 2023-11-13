@@ -1,0 +1,1929 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+    <!-- npx tailwindcss -i ./input.css -o ./output.css --watch  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+    <!-- 1 -->
+    <div
+      id="mobile-menu"
+      style="background: rgba(109, 100, 67, 0.48); backdrop-filter: blur(20px)"
+      class="absolute w-screen top-0 h-screen z-20 items-start justify-between hidden transition-transform ease-linear delay-1000 duration-1000"
+    >
+      <div
+        style="
+          box-shadow: 4px 16px 32px -4px rgba(204, 209, 217, 0.16);
+          border-radius: 0px 24px 24px 0px;
+        "
+        class="w-[90%] h-full bg-white"
+      >
+        <ul
+          class="flex flex-col align-center justify-center h-full cursor-pointer text-lg text-[#0A0A0A] font-medium"
+        >
+          <li class="mx-10 my-[16px] hover:underline">Что получаешь?</li>
+          <li class="mx-10 my-[16px] hover:underline">Как пользоваться?</li>
+          <li class="mx-10 my-[16px] hover:underline">Тренеры?</li>
+          <li class="mx-10 my-[16px] hover:underline">Тариф</li>
+          <li class="mx-10 my-[16px] hover:underline">Отзывы</li>
+        </ul>
+      </div>
+      <img
+        id="close"
+        src="./images/close.svg"
+        class="w-[25px] mr-3 mt-[62px] cursor-pointer"
+        alt=""
+      />
+    </div>
+    <!-- 2 -->
+    <section class="bg-[#F5F7FA] overflow-hidden rounded-b-3xl">
+      <main
+        class="rounded-2xl mx-auto md:h-[900px] h-[910px] relative md:w-[1050px] w-screen md:rounded-b-[64px]"
+      >
+        <header
+          class="flex items-center gap-[42px] md:ml-[0] pl-[22px] w-screen font-inter pt-6 md:justify-start justify-between"
+        >
+          <img class="md:h-[104px] h-[80px]" src="./images/log0.svg" alt="" />
+          <div class="md:flex gap-11 hidden">
+            <a
+              class="border-b border-opacity-25 border-[#000000] cursor-pointer text-4"
+              >Что получаешь?</a
+            >
+            <a
+              class="border-b border-opacity-25 border-[#000000] cursor-pointer text-4"
+              >Как пользоваться?</a
+            >
+            <a
+              class="border-b border-opacity-25 border-[#000000] cursor-pointer text-4"
+              >Тренеры</a
+            >
+            <a
+              class="border-b border-opacity-25 border-[#000000] cursor-pointer text-4"
+              >Тариф</a
+            >
+            <a
+              class="border-b border-opacity-25 border-[#000000] cursor-pointer text-4"
+              >Отзывы</a
+            >
+          </div>
+          <img
+            id="burger"
+            class="w-[18px] md:hidden block mr-10 cursor-pointer"
+            src="./images/Burger.svg"
+            alt=""
+          />
+        </header>
+
+        <section class="w-full md:ml-[0] md:mt-[60px] mt-[26px]">
+          <img
+            src="./images/man-1.png"
+            class="absolute left-[140px] md:left-[793px] md:top-[72px] top-[397px] h-[350px] md:h-[825px]"
+            alt=""
+          />
+          <div class="ml-[23px] flex flex-col">
+            <p
+              class="text-[#969696] md:text-sm text-[12px] md:leading-4 leading-3 z-10"
+            >
+              Для тех, кто занимается бодибилдингом, <br />
+              пауэрлифтингом, фитнесом <br />
+              и ведет здоровый образ жизни
+            </p>
+            <p
+              class="font-gilroy font-bold md:text-5xl leading-[30px] md:leading-[59px] text-2xl mt-[10px] z-10"
+            >
+              Фитнес-сервис №1: <br />
+              все полезные инструменты <br />
+              в одном месте
+            </p>
+            <p class="md:mt-[22px] mt-[14px] md:w-[479px] w-[314px] text-lg">
+              Получи персональную программу тренировок на месяц по цене 1
+              тренировки в зале или используй бесплатные возможности сервиса для
+              достижения бомбических результатов.
+            </p>
+            <p
+              class="mt-[34px] text-2xl font-bold text-[#000000] leading-6 z-10"
+            >
+              Что внутри?
+            </p>
+          </div>
+
+          <nav class="flex gap-[17px] md:mt-0 mt-[28px] overflow-auto w-screen">
+            <a
+              class="rounded-3xl shadow-nav text-lg px-[23px] py-[30px] whitespace-nowrap"
+              href=""
+              style="
+                backdrop-filter: blur(12px);
+                box-shadow: 0px 56px 48px -16px rgba(170, 178, 189, 0.12);
+              "
+              >Программы тренировок <br />
+              для зала и дома</a
+            >
+            <a
+              class="rounded-3xl shadow-nav text-lg px-[23px] py-[30px] whitespace-nowrap"
+              style="
+                backdrop-filter: blur(12px);
+                box-shadow: 0px 56px 48px -16px rgba(170, 178, 189, 0.12);
+              "
+              href=""
+              >Личный тренер <br />
+              и диетолог</a
+            >
+            <a
+              class="rounded-3xl shadow-nav text-lg px-[23px] py-[30px] whitespace-nowrap"
+              style="
+                backdrop-filter: blur(12px);
+                box-shadow: 0px 56px 48px -16px rgba(170, 178, 189, 0.12);
+              "
+              href=""
+            >
+              База упражнений <br />
+              с описанием
+            </a>
+            <a
+              class="rounded-3xl shadow-nav text-lg font-semibold px-[23px] py-[30px] relative whitespace-nowrap"
+              style="
+                backdrop-filter: blur(12px);
+                box-shadow: 0px 56px 48px -16px rgba(170, 178, 189, 0.12);
+              "
+              href=""
+            >
+              <img src="./images/Sticker.png" class="absolute -top-7" alt="" />
+              Дневник тренировок <br />
+              и питания
+            </a>
+            <a
+              class="rounded-3xl shadow-nav text-lg font-semibold px-[23px] py-[30px] relative whitespace-nowrap"
+              style="
+                backdrop-filter: blur(12px);
+                box-shadow: 0px 56px 48px -16px rgba(170, 178, 189, 0.12);
+              "
+              href=""
+            >
+              <img src="./images/Sticker.png" class="absolute -top-7" alt="" />
+              Статистика <br />
+              прогресса</a
+            >
+          </nav>
+          <div
+            class="get-app md:mt-8 mt-[94px] flex items-center w-screen md:gap-[39px] gap-[35px] md:flex-row flex-col"
+          >
+            <div
+              class="bg-[#B0CE66] rounded-2xl py-[27px] px-[38px] text-white w-fit cursor-pointer"
+            >
+              Получить персональную программу
+            </div>
+            <a
+              class="border-b border-opacity-25 border-[#000000] cursor-pointer text-4"
+              >Зарегистрироваться</a
+            >
+          </div>
+        </section>
+      </main>
+    </section>
+    <!-- 3 -->
+    <section class="mt-[27px]">
+      <div
+        class="font-gilroy md:text-5xl leading-[30px] md:leading-[58px] text-2xl text-center items-center md:w-[558px] w-[275px] mx-auto font-extrabold"
+      >
+        Легко достигай <br />
+        своих целей с сервисом
+        <img
+          src="./images/pro.png"
+          class="md:h-[57px] h-[30px] inline"
+          alt=""
+        />
+        тренировки
+      </div>
+      <div
+        class="flex mx-auto w-[380px] md:w-[1000px] flex-wrap gap-8 items-center justify-center mt-10"
+      >
+        <div class="w-[447px] h-[387px] border rounded-xl p-6 border-[#E6E9ED]">
+          <img src="./images/train1.jpg" class="mt-4" alt="" />
+          <span class="text-base font-bold mt-12 block"
+            >Набирай мышечную массу</span
+          >
+          <p class="mt-3">
+            Наши профессиональные тренера составят для тебя программу с учётом
+            твоих целей, опыта и возможных травм. <br />
+            Занимайся в зале или дома и отслеживай свой прогресс в личном
+            кабинете.
+          </p>
+        </div>
+        <div class="w-[447px] h-[387px] border rounded-xl p-6 border-[#E6E9ED]">
+          <img src="./images/train2.jpg" class="mt-4" alt="" />
+          <span class="text-base font-bold mt-12 block"
+            >Теряй лишние килограммы</span
+          >
+          <p class="mt-3">
+            <span class="flex">
+              Худей легко с
+              <img class="h-[29px] mx-1" src="./images/pro.png" alt="" />
+              тренировки.
+            </span>
+            <br />
+
+            Получи стандартную или персональную программу питания с учетом твоих
+            особенности, веди дневник питания и худей правильно без голода и
+            жестких диет.
+          </p>
+        </div>
+        <div class="w-[447px] h-[387px] border rounded-xl p-6 border-[#E6E9ED]">
+          <img src="./images/train3.jpg" class="mt-4" alt="" />
+          <span class="text-base font-bold mt-12 block"
+            >Веди здоровый образ жизни</span
+          >
+          <p class="mt-3">
+            Зарегистрируйся и получи бесплатный доступ к 10+ калькуляторам,
+            которые помогут понять твой уровень тренированности, оптимальную
+            калорийность рациона и подобрать программу тренинга.
+          </p>
+        </div>
+        <div class="w-[447px] h-[387px] border rounded-xl p-6 border-[#E6E9ED]">
+          <img src="./images/train4.png" class="mt-4" alt="" />
+          <span class="text-base font-bold mt-12 block"
+            >Отслеживай свой прогресс</span
+          >
+          <p class="mt-3">
+            Веди дневник тренировок и питания, ставь цели и отслеживай прогресс
+            в личном кабинете.
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex md:flex-row mx-auto w-fit gap-[23px] flex-col items-center my-[39px]"
+      >
+        <p class="font-gilroy text-[20px] font-bold">
+          Уже тренируются с нами +10 835
+        </p>
+        <div
+          class="bg-[#B0CE66] rounded-2xl py-[27px] px-[38px] text-white md:w-fit w-full text-center cursor-pointer"
+        >
+          Присоединиться
+        </div>
+      </div>
+    </section>
+    <!-- 4 -->
+    <section class="bg-[#F4FAE3] rounded-[24px] md:rounded-[32px]">
+      <div
+        class="md:w-[1000px] w-screen mx-auto md:h-[560px] h-[772px] relative md:rounded-[64px] rounded-3xl mt-[72px]"
+      >
+        <div
+          class="md:pt-[119px] md:ml-[0] ml-[22px] pt-[45px] block z-20 md:w-[450px] w-[340px]"
+        >
+          <p class="md:text-[32px] text-2xl font-bold block font-gilroy">
+            Получи свою персональную программу тренировок прямо сейчас!
+          </p>
+          <span class="mt-4 block text-lg"
+            >По цене 1 тренировки в зале получишь программу тренировок и питания
+            на 1 месяц от профессионального тренера.</span
+          >
+          <div
+            class="bg-[#B0CE66] rounded-2xl py-[27px] text-base px-[38px] text-white md:w-fit w-full cursor-pointer mt-8 text-center"
+          >
+            Получить программу
+          </div>
+        </div>
+        <img
+          class="absolute bottom-0 md:left-[481px] left-0 w-[360px] md:w-[550px]"
+          src="./images/woman1.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- 5 -->
+    <section
+      class="md:mx-auto md:w-[1000px] w-screen pl-[22px] ml-[0] mt-[81px]"
+    >
+      <div
+        class="font-gilroy font-bold md:text-[48px] text-2xl md:w-[740px] w-[305px] md:leading-[42px] leading-[30px]"
+      >
+        <img
+          class="md:h-[57px] h-[30px] mr-1 inline"
+          src="./images/pro.png"
+          alt=""
+        />
+        тренировки — лёгкий путь к телу мечты и достижения спортивных целей
+      </div>
+      <p class="text-[20px] mt-[18px]">
+        Что ты получаешь, регистрируясь в сервисе?
+      </p>
+      <div
+        class="mt-[56px] md:w-[760px] w-[375px] flex flex-wrap gap-x-[155px] gap-y-[27px]"
+      >
+        <div class="w-[286px]">
+          <span class="text-base font-bold">Программа тренировок</span>
+          <p class="mt-2 text-[#6A6A6A] text-base">
+            Получи профессионально составленную программу от наших тренеров и
+            достигай поставленных целей еще быстрее.
+          </p>
+        </div>
+        <div class="w-[286px]">
+          <span class="text-base font-bold">Программа питания</span>
+          <p class="mt-2 text-[#6A6A6A] text-base">
+            Правильное питание — 80% <br />
+            твоего успеха. Диетологи сервиса
+            <img
+              src="./images/pro.png"
+              class="h-[21px] inline mx-auto"
+              alt=""
+            />
+            <b class="text-black">тренировки</b> составят для тебя персональную
+            сбалансированную программу питания с учётом твоего образа жизни,
+            веса и целей.
+          </p>
+        </div>
+        <div class="w-[286px]">
+          <span class="text-base font-bold">База упражнений</span>
+          <p class="mt-2 text-[#6A6A6A] text-base">
+            Получи доступ к базе упражнений для зала и дома с описанием
+            правильной техники выполнения и составь собственную программу.
+          </p>
+        </div>
+        <div class="w-[286px]">
+          <span class="text-base font-bold">Дневник тренировок</span>
+          <p class="mt-2 text-[#6A6A6A] text-base">
+            Фиксируй количество подходов, повторений и отслеживай свой прогресс
+            в силовых показателях.
+          </p>
+        </div>
+
+        <div class="w-[286px]">
+          <span class="text-base font-bold">Дневник питания</span>
+          <p class="mt-2 text-[#6A6A6A] text-base">
+            Абсолютно необходимый инструмент для всех, кто занимается спортом и
+            следит за фигурой
+          </p>
+        </div>
+        <div class="w-[286px]">
+          <span class="text-base font-bold">Твой прогресс в режиме online</span>
+          <p class="mt-2 text-[#6A6A6A] text-base">
+            Ставь цели, отмечай результаты и оценивай свой прогресс спустя
+            время.
+          </p>
+        </div>
+
+        <div class="w-[286px]">
+          <span class="text-base font-bold">Полезные инструменты</span>
+          <p class="mt-2 text-[#6A6A6A] text-base">
+            Получи доступ к 10+ калькуляторам, которые помогу рассчитать
+            необходимую калорийность рациона, нагрузку, твой идеальный вес и
+            многое другое.
+          </p>
+        </div>
+        <div class="w-[286px]">
+          <span class="text-base font-bold flex items-center"
+            >Онлайн марафоны
+            <p
+              class="px-[5px] mx-2 bg-[#DFDFDF] leading-[21px] font-medium text-[11px] text-white inline rounded-[5px]"
+            >
+              СКОРО
+            </p></span
+          >
+          <p class="mt-2 text-[#6A6A6A] text-base">
+            Ставь цели, отмечай результаты и оценивай свой прогресс спустя
+            время.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- 6 -->
+    <section
+      class="md:mx-auto md:w-[1000px] w-screen px-[22px] mx-[0] md:pt-[126px] pt-[46px] relative"
+    >
+      <div>
+        <p
+          class="md:mb-[74px] font-gilroy mb-[27px] font-bold md:text-[48px] text-[32px]"
+        >
+          Как это работает?
+        </p>
+        <div
+          class="flex md:gap-[22px] gap-[13px] md:flex-row flex-col mb-[29px]"
+        >
+          <div
+            class="flex w-12 h-12 items-center text-center justify-center rounded-full border border-[#B0CE66] text-[#B0CE66]"
+          >
+            1
+          </div>
+          <p class="md:w-[246px] w-[329px] text-lg">
+            Каждый месяц <br class="hidden md:block" />
+            тебя ждет новый марафон, например, «Кто больше выжмет от груди»
+          </p>
+        </div>
+        <div
+          class="flex md:gap-[22px] gap-[13px] md:flex-row flex-col mb-[29px]"
+        >
+          <div
+            class="flex w-12 h-12 items-center text-center justify-center rounded-full border border-[#B0CE66] text-[#B0CE66]"
+          >
+            2
+          </div>
+          <p class="md:w-[246px] w-[329px] text-lg">
+            Записывай видео процесса и отправляй в личном кабинете
+          </p>
+        </div>
+        <div
+          class="flex md:gap-[22px] gap-[13px] md:flex-row flex-col mb-[29px]"
+        >
+          <div
+            class="flex w-12 h-12 items-center text-center justify-center rounded-full border border-[#B0CE66] text-[#B0CE66]"
+          >
+            3
+          </div>
+          <p class="md:w-[246px] w-[329px] text-lg">
+            Наши тренера выберут самого сильного и лучшего в участника этого
+            месяца.
+          </p>
+        </div>
+        <div
+          class="flex md:gap-[22px] gap-[13px] md:flex-row flex-col mb-[29px]"
+        >
+          <div
+            class="flex w-12 h-12 items-center text-center justify-center rounded-full border border-[#B0CE66] text-[#B0CE66]"
+          >
+            4
+          </div>
+          <p class="md:w-[246px] w-[329px] text-lg">
+            Побеждай и получай <br class="hidden md:block" />
+            ценные призы от сервиса
+            <img src="./images/pro.png" class="inline h-[21px]" alt="" />
+            тренировки.
+          </p>
+        </div>
+      </div>
+      <img
+        src="./images/man2-back.png"
+        class="md:left-[491px] left-[31px] md:top-[163px] top-[838px] w-[335px] md:w-[665px] absolute block"
+        alt=""
+      />
+      <img
+        class="absolute md:left-[428px] left-0 w-[275px] md:w-[547px] md:top-0 top-[756px] block"
+        src="./images/man2.png"
+        alt=""
+      />
+    </section>
+    <!-- 7 -->
+    <section class="md:mt-[283px] mt-[530px] bg-[#F4FAE3]">
+      <div
+        class="w-screen md:h-[560px] h-[772px] relative mx-auto md:w-[1000px] md:rounded-[64px] rounded-3xl mt-[72px]"
+      >
+        <div
+          class="md:pt-[119px] md:ml-[550px] ml-[22px] pt-[45px] block z-20 md:w-[428px] w-[315px]"
+        >
+          <p class="md:text-[32px] text-2xl font-bold block font-gilroy">
+            Получи программу тренировок и питания <br />
+            на 1 день бесплатно
+          </p>
+          <span class="mt-4 block text-lg"
+            >Ты в нужном месте и в нужное время, <br class="hidden md:block" />
+            чтобы начать свой путь <br class="md:hidden block" />
+            к здоровью, отличному самочувствию и подтянутому телу.</span
+          >
+          <div
+            class="bg-[#B0CE66] rounded-2xl py-[27px] text-base px-[38px] text-white md:w-fit w-full cursor-pointer mt-5 text-center"
+          >
+            Получить программу
+          </div>
+        </div>
+        <img
+          class="absolute bottom-0 md:-left-[120px] left-[31px] w-[268px] md:w-[424px]"
+          src="./images/girl2.png"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- 8 -->
+    <section
+      class="md:mt-[137px] overflow-hidden mt-[42px] md:mx-auto px-[22px] mx-[0] relative h-[1627] md:h-[1866px] w-screen md:w-[1040px]"
+    >
+      <img
+        src="./images/mackbook-back.svg"
+        class="absolute md:top-[33px] md:-left-[47px] -top-[167px] -left-[500px] min-w-screen md:min-w-[1466px]"
+        alt=""
+      />
+
+      <img
+        src="./images/macbook1.png"
+        class="absolute md:top-[59px] top-[93px] md:left-[384px] left-[28px] md:h-[535px] h-[260px]"
+        alt=""
+      />
+
+      <img
+        src="./images/phone-back.png"
+        class="absolute top-[754px] md:top-[1070px] md:left-0 left-[27px] w-[437px] md:w-[736px]"
+        alt=""
+      />
+      <img
+        src="./images/phone.png"
+        class="absolute top-[751px] md:top-[1074px] md:left-0 left-[27px] w-[382px] md:w-[622px]"
+        alt=""
+      />
+
+      <p class="font-bold md:text-[48px] font-gilroy text-[32px]">
+        Как пользоваться <br />
+        сервисом
+      </p>
+      <div
+        class="relative gap-[22px] flex md:flex-row flex-col md:mt-[168px] mt-[311px]"
+      >
+        <div
+          class="flex w-12 h-12 items-center text-center justify-center rounded-full border border-[#B0CE66] bg-[#B0CE66] text-white"
+        >
+          1
+        </div>
+        <p class="mt-1 w-[295px] md:w-[380px] text-lg">
+          Регистрируйся на платформе
+        </p>
+      </div>
+
+      <div
+        class="relative gap-[22px] flex md:flex-row flex-col md:mt-[460px] mt-[26px]"
+      >
+        <div
+          class="flex w-12 h-12 items-center text-center justify-center rounded-full border border-[#B0CE66] bg-[#B0CE66] text-white"
+        >
+          2
+        </div>
+        <p class="mt-1 w-[295px] md:w-[380px] text-lg">
+          Получай доступ к бесплатным и очень нужным инструментам: дневнику
+          питания и тренировок, статистике прогресса, калькуляторам и т. д.
+        </p>
+      </div>
+      <div
+        class="relative gap-[22px] flex md:flex-row flex-col ml-[21px] md:ml-[536px] mt-[450px] md:mt-[332px]"
+      >
+        <div
+          class="flex w-12 h-12 items-center text-center justify-center rounded-full border border-[#B0CE66] bg-[#B0CE66] text-white"
+        >
+          3
+        </div>
+        <p class="mt-1 w-[295px] md:w-[395px] text-lg">
+          Выбери свой тариф и получи персональную программу тренировок для дома
+          или зала, личный план питания и дополнительные возможности сервиса.
+        </p>
+      </div>
+      <div
+        class="relative gap-[22px] flex md:flex-row flex-col ml-[21px] md:ml-[536px] md:mt-[55px] mt-[26px]"
+      >
+        <div
+          class="flex w-12 h-12 items-center text-center justify-center rounded-full border border-[#B0CE66] bg-[#B0CE66] text-white"
+        >
+          4
+        </div>
+        <p class="mt-1 w-[250px] md:w-[380px] text-lg">
+          Фиксируй свой прогресс и уверенно достигай целей с сервисом
+          <img src="./images/pro.png" class="inline h-[21px]" alt="" />
+          тренировки!
+        </p>
+      </div>
+    </section>
+    <!-- 9 -->
+    <section
+      class="relative w-[80vw] pb-[95px] md:pb-[64px] overflow-hidden mx-auto"
+    >
+      <p
+        class="text-[48px] md:w-[1000px] w-fit font-bold mx-[22px] md:mx-auto mt-10 md:mt-0 font-gilroy"
+      >
+        Тренеры
+      </p>
+      <div
+        id="container"
+        class="md:w-fit w-[95%] flex-nowrap flex justify-center overflow-auto mx-[22px] md:mx-auto gap-[35px] mt-[53px] md:mt-[75px]"
+      >
+        <div class="min-w-[326px]">
+          <img class="w-full" src="./images/girl3.png" alt="" />
+          <div class="font-bold font-gilroy text-[24px] mt-5">
+            Овчинникова Ольга
+          </div>
+          <div class="flex flex-col gap-y-[25px] mt-[31px]">
+            <div>
+              <span class="text-lg font-bold">Образование</span>
+              <ul class="gap-y-[5px] flex flex-col mt-3">
+                <li class="flex gap-4">
+                  <p class="text-[#B0CE66] font-black text-lg">__</p>
+                  <div class="w-[238px] text-[#6A6A6A] text-base">
+                    Реабилитология заболевания позвоночника (VP Fitness
+                    Consulting).
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <p class="text-[#B0CE66] font-black text-lg">__</p>
+                  <div class="w-[238px] text-[#6A6A6A] text-base">
+                    Опыт тренерской работы более 4-х лет.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <span class="mt-[31px] text-lg font-bold">Образование</span>
+              <ul class="gap-y-[5px] flex flex-col mt-3">
+                <li class="flex gap-4">
+                  <p class="text-[#B0CE66] font-black text-lg">__</p>
+                  <div class="w-[238px] text-[#6A6A6A] text-base">
+                    Реабилитология заболевания позвоночника (VP Fitness
+                    Consulting).
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <p class="text-[#B0CE66] font-black text-lg">__</p>
+                  <div class="w-[238px] text-[#6A6A6A] text-base">
+                    Опыт тренерской работы более 4-х лет.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="min-w-[326px]">
+          <img class="w-full" src="./images/man22.png" alt="" />
+          <div class="font-bold text-[24px] mt-5 font-gilroy">
+            Овчинникова Ольга
+          </div>
+          <div class="flex flex-col gap-y-[25px] mt-[31px]">
+            <div>
+              <span class="text-lg font-bold">Образование</span>
+              <ul class="gap-y-[5px] flex flex-col mt-3">
+                <li class="flex gap-4">
+                  <p class="text-[#B0CE66] font-black text-lg">__</p>
+                  <div class="w-[238px] text-[#6A6A6A] text-base">
+                    Реабилитология заболевания позвоночника (VP Fitness
+                    Consulting).
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <p class="text-[#B0CE66] font-black text-lg">__</p>
+                  <div class="w-[238px] text-[#6A6A6A] text-base">
+                    Опыт тренерской работы более 4-х лет.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <span class="mt-[31px] text-lg font-bold">Образование</span>
+              <ul class="gap-y-[5px] flex flex-col mt-3">
+                <li class="flex gap-4">
+                  <p class="text-[#B0CE66] font-black text-lg">__</p>
+                  <div class="w-[238px] text-[#6A6A6A] text-base">
+                    Реабилитология заболевания позвоночника (VP Fitness
+                    Consulting).
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <p class="text-[#B0CE66] font-black text-lg">__</p>
+                  <div class="w-[238px] text-[#6A6A6A] text-base">
+                    Опыт тренерской работы более 4-х лет.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="min-w-[326px]">
+          <img class="w-full" src="./images/man3.png" alt="" />
+          <div class="font-bold font-gilroy text-[24px] mt-5">
+            Овчинникова Ольга
+          </div>
+          <div class="flex flex-col gap-y-[25px] mt-[31px]">
+            <div>
+              <span class="text-lg font-bold">Образование</span>
+              <ul class="gap-y-[5px] flex flex-col mt-3">
+                <li class="flex gap-4">
+                  <p class="text-[#B0CE66] font-black text-lg">__</p>
+                  <div class="w-[238px] text-[#6A6A6A] text-base">
+                    Реабилитология заболевания позвоночника (VP Fitness
+                    Consulting).
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <p class="text-[#B0CE66] font-black text-lg">__</p>
+                  <div class="w-[238px] text-[#6A6A6A] text-base">
+                    Опыт тренерской работы более 4-х лет.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <span class="mt-[31px] text-lg font-bold">Образование</span>
+              <ul class="gap-y-[5px] flex flex-col mt-3">
+                <li class="flex gap-4">
+                  <p class="text-[#B0CE66] font-black text-lg">__</p>
+                  <div class="w-[238px] text-[#6A6A6A] text-base">
+                    Реабилитология заболевания позвоночника (VP Fitness
+                    Consulting).
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <p class="text-[#B0CE66] font-black text-lg">__</p>
+                  <div class="w-[238px] text-[#6A6A6A] text-base">
+                    Опыт тренерской работы более 4-х лет.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-fit md:w-[1000px] mx-auto">
+        <p
+          class="w-[309px] md:w-[380px] text-base font-medium md:mt-[84px] mt-[58px] text-[#000000]"
+        >
+          Наши тренера составят для тебя персональную программу тренировок и
+          питания
+        </p>
+        <div class="w-full mt-[10px]">
+          <div
+            class="bg-[#B0CE66] rounded-2xl py-[27px] px-[38px] text-white md:w-fit text-center cursor-pointer md:mx-0 mx-[22px] mt-4"
+          >
+            Присоединиться
+          </div>
+        </div>
+      </div>
+      <div class="w-full px-[48px] flex justify-between absolute top-[280px]">
+        <img id="slideLeft" src="./images/Back.png" alt="" />
+        <img id="slideRight" src="./images/Next.png" alt="" />
+      </div>
+    </section>
+
+    <!-- only desktop -->
+    <section class="bg-[#F5F7FA] pb-[72px] md:block hidden">
+      <div class="md:w-[1000px] mx-auto pt-[69px]">
+        <p class="font-gilroy font-bold text-[48px]">Выбери свой тариф</p>
+        <div id="table" class="mt-[48px]">
+          <header id="tarif2" class="flex gap-1">
+            <p class="w-[330px] text-base mt-[86px] pl-[14px]">
+              Стоимость день
+            </p>
+            <div
+              style="box-shadow: 4px 16px 32px -4px rgba(170, 178, 189, 0.16)"
+              class="tarif items-center justify-between py-[20px] flex flex-col gap-[30px] bg-white rounded-3xl w-[96px]"
+            >
+              <span class="relative font-medium text-base"
+                >Free
+                <div
+                  style="box-shadow: 5px 5px 10px rgba(170, 178, 189, 0.2)"
+                  class="absolute -top-[109px] left-[38px] py-[29px] text-center w-[237px] rounded-[10px] bg-white"
+                >
+                  Ознакомительный тариф, действует только 1 день
+                </div>
+                <img
+                  src="./images/question.png"
+                  class="absolute -top-[5px] -right-[14px] w-[13px] h-[13px]"
+                  alt=""
+              /></span>
+              <span class="font-gilroy font-semibold text-2xl">0 ₽</span>
+            </div>
+            <div
+              class="tarif items-center justify-between py-[20px] flex flex-col gap-[30px] border border-dashed rounded-3xl w-[96px]"
+            >
+              <span class="relative font-medium text-base">Standart </span>
+              <span class="font-gilroy font-semibold text-2xl">20 ₽</span>
+            </div>
+
+            <div
+              class="tarif items-center justify-between py-[20px] flex flex-col gap-[30px] border border-dashed rounded-3xl w-[96px]"
+            >
+              <span class="relative font-medium text-base"
+                >Standart
+                <p class="text-[#6A6A6A] inline">+</p>
+              </span>
+              <span class="font-gilroy font-semibold text-2xl">40 ₽</span>
+            </div>
+            <div
+              class="tarif items-center justify-between py-[20px] flex flex-col gap-[30px] border border-dashed rounded-3xl w-[96px]"
+            >
+              <span class="relative font-medium text-base"
+                >Standart
+                <p class="text-[#6A6A6A] inline">+</p>
+                <div
+                  class="bg-[#6D6443] text-white rounded-[4px] px-[5px] py-[3px] text-[8px] leading-[10px] w-fit mx-auto"
+                >
+                  Fooddiary
+                </div>
+              </span>
+              <span class="font-gilroy font-semibold text-2xl">40 ₽</span>
+            </div>
+            <div
+              class="tarif items-center justify-between py-[20px] flex flex-col gap-[30px] border border-dashed rounded-3xl w-[96px]"
+            >
+              <span class="relative font-medium text-base">Premium </span>
+              <span class="font-gilroy font-semibold text-2xl">140 ₽</span>
+            </div>
+            <div
+              class="tarif items-center justify-between py-[20px] flex flex-col gap-[30px] border border-dashed rounded-3xl w-[96px]"
+            >
+              <span class="relative font-medium text-base"
+                >Premium
+                <p class="text-[#6A6A6A] inline">+</p>
+              </span>
+              <span class="font-gilroy font-semibold text-2xl">100 ₽</span>
+            </div>
+          </header>
+          <tbody class="">
+            <div
+              class="w-[918px] py-2 pl-[14px] flex items-center rounded-[2px] odd:bg-white"
+            >
+              <span class="w-[330px]"
+                ><p class="text-base">Дневник тренировок</p>
+                <p class="text-[#6a6a6a]">Самостоятельное заполнение</p></span
+              >
+              <div class="flex gap-1">
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[918px] py-2 pl-[14px] flex items-center rounded-[2px] odd:bg-white"
+            >
+              <span class="w-[330px]"
+                ><p class="text-base">Дневник тренировок</p>
+                <p class="text-[#6a6a6a]">Самостоятельное заполнение</p></span
+              >
+              <div class="flex gap-1">
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[918px] py-2 pl-[14px] flex items-center rounded-[2px] odd:bg-white"
+            >
+              <span class="w-[330px]"
+                ><p class="text-base">Дневник тренировок</p>
+                <p class="text-[#6a6a6a]">Самостоятельное заполнение</p></span
+              >
+              <div class="flex gap-1">
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[918px] py-2 pl-[14px] flex items-center rounded-[2px] odd:bg-white"
+            >
+              <span class="w-[330px]"
+                ><p class="text-base">Дневник тренировок</p>
+                <p class="text-[#6a6a6a]">Самостоятельное заполнение</p></span
+              >
+              <div class="flex gap-1">
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[918px] py-2 pl-[14px] flex items-center rounded-[2px] odd:bg-white"
+            >
+              <span class="w-[330px]"
+                ><p class="text-base">Дневник тренировок</p>
+                <p class="text-[#6a6a6a]">Самостоятельное заполнение</p></span
+              >
+              <div class="flex gap-1">
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[918px] py-2 pl-[14px] flex items-center rounded-[2px] odd:bg-white"
+            >
+              <span class="w-[330px]"
+                ><p class="text-base">Дневник тренировок</p>
+                <p class="text-[#6a6a6a]">Самостоятельное заполнение</p></span
+              >
+              <div class="flex gap-1">
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[918px] py-2 pl-[14px] flex items-center rounded-[2px] odd:bg-white"
+            >
+              <span class="w-[330px]"
+                ><p class="text-base">Дневник тренировок</p>
+                <p class="text-[#6a6a6a]">Самостоятельное заполнение</p></span
+              >
+              <div class="flex gap-1">
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+                <div
+                  class="w-[96px] flex items-center justify-center text-center"
+                >
+                  <img src="./images/tick2.png" class="w-6 h-5" alt="" />
+                </div>
+              </div>
+            </div>
+          </tbody>
+          <div class="md:w-[1000px] mx-auto mt-[42px]">
+            <div
+              class="bg-[#B0CE66] rounded-2xl py-[27px] px-[38px] text-white md:ml-0 mx-auto w-fit text-center cursor-pointer"
+            >
+              Выбрать тариф
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- only phone -->
+    <section
+      md:text-5xl
+      leading-[30px]
+      md:leading-[58px]
+      text-2xl
+      text-center
+      items-center
+      md:w-[558px]
+      w-[275px]
+      mx-auto
+      font-extrabold
+      class="bg-[#F5F7FA] w-screen overflow-hidden rounded-[24px] pt-[48px] pb-[40px] block md:hidden"
+    >
+      <p class="font-gilroy text-[24px] font-bold mx-[22px]">
+        Выбери свой тариф
+      </p>
+      <div class="overflow-auto w-screen mt-10 flex ml-4 gap-6">
+        <div class="min-w-[262px] py-[31px] px-[22px] bg-white rounded-3xl">
+          <p class="text-2xl font-bold font-gilroy">Standart+</p>
+          <span class="flex items-center mt-[21px]"
+            ><p class="font-gilroy font-bold text-[64px]">40 ₽</p>
+            <p>/ день</p></span
+          >
+          <p class="mt-[9px] text-[#6A6A6A]">
+            Тоже что и Standard, но упражнения формируются автоматически,
+            заполняется сразу вся ближайшая неделя
+          </p>
+          <div
+            class="bg-[#B0CE66] rounded-2xl py-[27px] px-[62px] text-white w-fit text-center cursor-pointer mt-11"
+          >
+            Купить
+          </div>
+        </div>
+        <div class="min-w-[262px] py-[31px] px-[22px] bg-white rounded-3xl">
+          <p class="text-2xl font-bold font-gilroy">Standart+</p>
+          <span class="flex items-center mt-[21px]"
+            ><p class="font-gilroy font-bold text-[64px]">40 ₽</p>
+            <p>/ день</p></span
+          >
+          <p class="mt-[9px] text-[#6A6A6A]">
+            Тоже что и Standard, но упражнения формируются автоматически,
+            заполняется сразу вся ближайшая неделя
+          </p>
+          <div
+            class="bg-[#B0CE66] rounded-2xl py-[27px] px-[62px] text-white w-fit text-center cursor-pointer mt-11"
+          >
+            Купить
+          </div>
+        </div>
+        <div class="min-w-[262px] py-[31px] px-[22px] bg-white rounded-3xl">
+          <p class="text-2xl font-bold font-gilroy">Standart+</p>
+          <span class="flex items-center mt-[21px]"
+            ><p class="font-gilroy font-bold text-[64px]">40 ₽</p>
+            <p>/ день</p></span
+          >
+          <p class="mt-[9px] text-[#6A6A6A]">
+            Тоже что и Standard, но упражнения формируются автоматически,
+            заполняется сразу вся ближайшая неделя
+          </p>
+          <div
+            class="bg-[#B0CE66] rounded-2xl py-[27px] px-[62px] text-white w-fit text-center cursor-pointer mt-11"
+          >
+            Купить
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 10 -->
+    <section class="mx-auto md:w-[1000px] w-fit md:pb-[108px] pb-[32px] mt-9">
+      <p
+        class="text-[24px] md:text-[48px] font-bold font-gilroy md:mx-0 mx-[32px]"
+      >
+        Почему подписка на
+        <img
+          src="./images/pro.png"
+          class="h-[27px] md:h-[50px] inline"
+          alt=""
+        />  тренировки в 10 раз выгоднее, чем занятия с личным тренером?
+      </p>
+      <div class="mt-[26px] md:mt-[58px] gap-[58px] flex md:flex-row flex-col">
+        <div
+          class="w-[413px] py-[54px] px-[58px] bg-[#F4FAE3] rounded-[64px] flex flex-col justify-center"
+        >
+          <p class="font-gilroy font-bold text-[32px]">
+            <img src="./images/pro.png" class="h-9 inline" alt="" /> тренировки
+          </p>
+          <p class="text-base font-bold mt-[18px]">
+            Самая дорогая подписка Premium+ обойдется тебе в 4300 ₽ (-30% при
+            покупке на полгода)
+          </p>
+          <p class="text-base text-[#6a6a6a] mt-[18px]">
+            При этом ты получаешь: <br />
+            · персональную программу питания и тренировок с учетом твоих
+            особенностей · онлайн консультации с тренером и диетологом <br />
+            · безграничный доступ базе знаний <br />
+            · все полезные инструменты сервиса.
+          </p>
+          <p class="font-bold text-base mt-[10px]">Твоя выгода: 15 700 ₽</p>
+        </div>
+        <div
+          class="w-[413px] py-[54px] px-[58px] bg-[#F5F7FA] rounded-[64px] flex flex-col justify-center"
+        >
+          <p class="text-base font-bold mt-[18px]">
+            Месяц тренировок с персональным тренером в тренажерном зале будут
+            стоить около 20 000₽
+          </p>
+          <p class="text-base text-[#6a6a6a] mt-[18px]">
+            Программа питания обычно стоит дополнительных денег.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- 11 -->
+    <section class="relative">
+      <p
+        class="font-gilroy font-bold text-[48px] w-fit md:w-[1000px] mx-[19px] md:mx-auto"
+      >
+        Отзывы
+      </p>
+      <div
+        id="container2"
+        class="pt-[41px] flex gap-[60px] w-screen overflow-auto"
+      >
+        <div
+          class="py-[72px] px-[40px] flex gap-[34px] min-w-[578px] rounded-[8px] relative"
+        >
+          <img src="./images/comment.png" class="h-[62px] mt-2" alt="" />
+          <div>
+            <span class="flex">
+              <img src="./images/start.png" alt="" />
+              <img src="./images/start.png" alt="" />
+              <img src="./images/start.png" alt="" />
+              <img src="./images/start.png" alt="" />
+              <img src="./images/start.png" alt="" />
+            </span>
+            <p class="text-lg mt-6">
+              Хочу поблагодарить за свои невероятные изменения в теле! Мало
+              того, что ушел вес, так ещё и тело стало подтянутым. <br />
+
+              Укрепились мышцы спины, с которой изначально были проблемы. И это
+              все благодаря правильным индивидуально подобранным тренировкам. Я
+              в восторге от результата! Спасибо моему тренеру!
+            </p>
+            <p class="mt-[21px] font-bold">Владислава Ермолаева</p>
+            <p class="text-[#D1D1D1] mt-[6px]">Санкт-Петербург</p>
+          </div>
+        </div>
+        <div
+          class="py-[72px] px-[40px] flex gap-[34px] min-w-[578px] bg-[#f4fae3] rounded-[8px] relative"
+        >
+          <img
+            src="./images/Union.png"
+            class="absolute -top-[40px] right-0 -z-10"
+            alt=""
+          />
+          <img src="./images/comment.png" class="h-[62px] mt-2" alt="" />
+          <div>
+            <span class="flex">
+              <img src="./images/start.png" alt="" />
+              <img src="./images/start.png" alt="" />
+              <img src="./images/start.png" alt="" />
+              <img src="./images/start.png" alt="" />
+              <img src="./images/start.png" alt="" />
+            </span>
+            <p class="text-lg mt-6">
+              Хочу поблагодарить за свои невероятные изменения в теле! Мало
+              того, что ушел вес, так ещё и тело стало подтянутым. <br />
+
+              Укрепились мышцы спины, с которой изначально были проблемы. И это
+              все благодаря правильным индивидуально подобранным тренировкам. Я
+              в восторге от результата! Спасибо моему тренеру!
+            </p>
+            <p class="mt-[21px] font-bold">Владислава Ермолаева</p>
+            <p class="text-[#D1D1D1] mt-[6px]">Санкт-Петербург</p>
+          </div>
+        </div>
+        <div
+          class="py-[72px] px-[40px] flex gap-[34px] min-w-[578px] rounded-[8px] relative"
+        >
+          <img src="./images/comment.png" class="h-[62px] mt-2" alt="" />
+          <div>
+            <span class="flex">
+              <img src="./images/start.png" alt="" />
+              <img src="./images/start.png" alt="" />
+              <img src="./images/start.png" alt="" />
+              <img src="./images/start.png" alt="" />
+              <img src="./images/start.png" alt="" />
+            </span>
+            <p class="text-lg mt-6">
+              Хочу поблагодарить за свои невероятные изменения в теле! Мало
+              того, что ушел вес, так ещё и тело стало подтянутым. <br />
+
+              Укрепились мышцы спины, с которой изначально были проблемы. И это
+              все благодаря правильным индивидуально подобранным тренировкам. Я
+              в восторге от результата! Спасибо моему тренеру!
+            </p>
+            <p class="mt-[21px] font-bold">Владислава Ермолаева</p>
+            <p class="text-[#D1D1D1] mt-[6px]">Санкт-Петербург</p>
+          </div>
+        </div>
+        <div
+          class="py-[72px] px-[40px] flex gap-[34px] min-w-[578px] rounded-[8px] relative"
+        >
+          <img src="./images/comment.png" class="h-[62px] mt-2" alt="" />
+          <div>
+            <span class="flex">
+              <img src="./images/start.png" alt="" />
+              <img src="./images/start.png" alt="" />
+              <img src="./images/start.png" alt="" />
+              <img src="./images/start.png" alt="" />
+              <img src="./images/start.png" alt="" />
+            </span>
+            <p class="text-lg mt-6">
+              Хочу поблагодарить за свои невероятные изменения в теле! Мало
+              того, что ушел вес, так ещё и тело стало подтянутым. <br />
+
+              Укрепились мышцы спины, с которой изначально были проблемы. И это
+              все благодаря правильным индивидуально подобранным тренировкам. Я
+              в восторге от результата! Спасибо моему тренеру!
+            </p>
+            <p class="mt-[21px] font-bold">Владислава Ермолаева</p>
+            <p class="text-[#D1D1D1] mt-[6px]">Санкт-Петербург</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full px-[48px] flex justify-between absolute top-[280px]">
+        <img id="slideLeft2" src="./images/Back.png" alt="" />
+        <img id="slideRight2" src="./images/Next.png" alt="" />
+      </div>
+      <div class="md:w-[1000px] mx-auto mt-[32px]">
+        <div
+          id="rate"
+          class="bg-[#B0CE66] rounded-2xl py-[27px] px-[38px] text-white md:ml-0 mx-auto w-fit text-center cursor-pointer"
+        >
+          Добавить отзыв
+        </div>
+      </div>
+    </section>
+    <!-- 12 -->
+
+    <section class="bg-[#F5F7FA] rounded-[24px] md:rounded-[32px]">
+      <div
+        class="md:w-[1000px] w-screen mx-auto md:h-[560px] h-[772px] relative md:rounded-[64px] rounded-3xl mt-[72px]"
+      >
+        <div
+          class="md:pt-[119px] md:ml-[0] ml-[22px] pt-[45px] block z-20 md:w-[450px] w-[340px]"
+        >
+          <p class="md:text-[32px] text-[32px] font-bold block font-gilroy">
+            <img src="./images/dzen.png" class="mr-[13px] inline" alt="" /> Дзен
+          </p>
+          <span class="mt-4 block text-lg"
+            >Ещё у нас есть Дзен-канал, где мы регулярно публикуем полезные
+            статьи на тему спорта и правильного питания</span
+          >
+          <div
+            id="submit"
+            class="bg-black rounded-2xl py-[27px] text-base px-[38px] text-white md:w-fit w-full cursor-pointer mt-8 text-center"
+          >
+            Подписаться
+          </div>
+        </div>
+        <img
+          class="absolute bottom-0 md:left-[481px] left-0 w-[282px] md:w-[431px]"
+          src="./images/girl-last.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- 13 -->
+    <section class="mt-[81px] w-screen md:w-[1000px] mx-auto pb-[81px]">
+      <p
+        class="text-[24px] md:text-[48px] font-bold font-gilroy mb-8 mx-[22px]"
+      >
+        Есть вопросы <br />
+        или пожелания?
+      </p>
+
+      <div
+        class="relative w-[94vw] md:w-[575px] bg-[#F5F7FA] px-[9px] py-4 rounded-lg mx-4"
+      >
+        <p class="text-[12px]">Имя</p>
+        <input
+          value="Константинопольский Константин Константинович"
+          type="text"
+          class="w-full bg-[#F5F7FA] mt-[6px] text-lg"
+        />
+        <img
+          src="./images/tick.png"
+          class="absolute right-[26px] top-1/2"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="relative w-[94vw] md:w-[575px] border border-2-[#B0CE66] px-[9px] py-4 rounded-lg mt-5 mx-4"
+      >
+        <p class="text-[12px]">Электронная почта или телефон</p>
+        <input
+          value="mail@romaganiev.com"
+          type="text"
+          class="w-full mt-[6px] text-lg"
+        />
+        <img
+          src="./images/tick.png"
+          class="absolute right-[26px] top-1/2 hidden"
+          alt=""
+        />
+      </div>
+
+      <textarea
+        name=""
+        id=""
+        placeholder="Напишите что-нибудь"
+        class="py-[21px] px-[15px] bg-[#F5F7FA] text-lg mt-5 w-[94vw] md:w-[575px] h-[180px] rounded-lg mx-4"
+      ></textarea>
+
+      <div class="flex gap-[10px] mt-[33px] mx-4">
+        <input
+          type="checkbox"
+          class="border border-[#CCD1D9] rounded-sm h-[21px] w-[21px]"
+        />
+        <p class="text-base">
+          Я согласен на обработку персональных данных <br />
+          согласно документу
+        </p>
+      </div>
+      <div class="px-4 md:w-fit w-screen">
+        <div
+          class="bg-[#B0CE66] rounded-2xl py-[27px] px-[38px] text-white md:w-fit w-full text-center cursor-pointer mt-[28px]"
+        >
+          Отправить
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="w-screen bg-[#f2f2f2]">
+      <header
+        class="flex md:flex-row flex-col items-center gap-[42px] w-screen md:w-[1040px] mx-auto pb-[38px] font-inter pt-6 md:justify-start justify-between"
+      >
+        <img class="md:h-[104px] h-[73px]" src="./images/log0.svg" alt="" />
+        <div
+          class="flex gap-6 md:gap-11 md:flex-row flex-col items-center mt-2 md:mt-0"
+        >
+          <a class="text-base hover:underline cursor-pointer text-4"
+            >Что получаешь?</a
+          >
+          <a class="text-base hover:underline cursor-pointer text-4"
+            >Как пользоваться?</a
+          >
+          <a class="text-base hover:underline cursor-pointer text-4">Тренеры</a>
+          <a class="text-base hover:underline cursor-pointer text-4">Тариф</a>
+          <a class="text-base hover:underline cursor-pointer text-4">Отзывы</a>
+        </div>
+      </header>
+      <div
+        class="flex md:flex-row flex-col items-center pt-[6px] md:pt-[34px] pb-[47px] md:pb-[28px] mx-auto gap-8 md:gap-[107px] w-fit md:border-y border-b md:border-y-[#E0E0E0] border-b-[#E0E0E0]"
+      >
+        <span class="flex gap-2">
+          <img src="./images/email.svg" alt="" />
+          <p class="text-[#828282]">Контакты:</p>
+          <p class="underline cursor-pointer">Protrenirovki@mail.com</p>
+        </span>
+        <span class="flex gap-2">
+          <img src="./images/email.svg" alt="" />
+          <p class="text-[#828282]">Для партнеров:</p>
+          <p class="underline cursor-pointer">Partnerstrenirovki@mail.com</p>
+        </span>
+      </div>
+      <div
+        class="flex md:flex-row flex-col items-center gap-6 md:gap-[75px] py-[47px] md:py-[28px] mx-auto w-screen md:w-[1000px]"
+      >
+        <p>© ОАО «Ромашка», 2022–2023</p>
+        <p class="text-[#828282]">Документация проекта</p>
+        <p id="privacy" class="text-[#828282]">
+          Согласие на обработку персональных данных
+        </p>
+      </div>
+    </footer>
+    <div
+      id="tarifPopup"
+      style="background: rgba(109, 100, 67, 0.48); display: none"
+      class="w-screen h-screen top-0 fixed"
+    >
+      <div class="relative h-full w-full">
+        <div
+          id="tarifPopup_main"
+          class="w-[90vw] md:w-[500px] bg-white rounded-2xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute"
+        >
+          <div
+            class="p-4 text-[20px] font-medium flex justify-between items-center"
+          >
+            <span>Выбрать тариф</span>
+            <span
+              id="close_tarif"
+              class="text-gray-500 text-[30px] cursor-pointer"
+              >x</span
+            >
+          </div>
+          <div style="position: relative; flex: 1 1 auto" class="p-4">
+            <select
+              style="
+                display: block;
+                width: 100%;
+                padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+                -moz-padding-start: calc(0.75rem - 3px);
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #212529;
+                background-image: url(./images/down-chevron.png);
+                background-color: #fff;
+                background-repeat: no-repeat;
+                background-position: right 0.75rem center;
+                background-size: 16px 16px;
+                border: 1px solid #ced4da;
+                border-radius: 0.375rem;
+                transition: border-color 0.15s ease-in-out,
+                  box-shadow 0.15s ease-in-out;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+              "
+              class=""
+              aria-label="Default select example"
+            >
+              <option selected>Выберите тариф</option>
+              <option value="1">Free</option>
+              <option value="2">Standart</option>
+              <option value="3">Standart+</option>
+              <option value="4">Premium</option>
+              <option value="5">Premium+</option>
+            </select>
+          </div>
+          <div class="p-4 flex justify-end gap-3">
+            <button
+              type="button"
+              class="bg-[#6c757d] px-4 py-2 text-white rounded-md"
+              data-bs-dismiss="modal"
+            >
+              Закрыть
+            </button>
+            <button
+              type="button"
+              class="bg-[#B0CE66] px-4 py-2 text-white rounded-md"
+            >
+              Выбрать
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="submitPopup"
+      style="background: rgba(109, 100, 67, 0.48); display: none"
+      class="w-screen h-screen top-0 fixed"
+    >
+      <div class="relative h-full w-full">
+        <div
+          class="w-[90vw] md:w-[500px] bg-white rounded-2xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute"
+        >
+          <div
+            class="p-4 text-[20px] font-medium flex justify-between items-center"
+          >
+            <span>Регистрация</span>
+            <span
+              id="close_submit"
+              class="text-gray-500 text-[30px] cursor-pointer"
+              >x</span
+            >
+          </div>
+          <div style="position: relative" class="px-4 pb-4 flex flex-col">
+            <label for="Email" class="mb-2">Email</label>
+            <input
+              style="
+                display: block;
+                width: 100%;
+                padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+                -moz-padding-start: calc(0.75rem - 3px);
+                color: #212529;
+                background-color: #fff;
+                background-position: right 0.75rem center;
+                background-size: 16px 16px;
+                border: 1px solid #ced4da;
+                border-radius: 0.375rem;
+                transition: border-color 0.15s ease-in-out,
+                  box-shadow 0.15s ease-in-out;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+              "
+              placeholder="Email"
+              class=""
+              aria-label="Default select example"
+            />
+          </div>
+          <div style="position: relative" class="px-4 pb-4 flex flex-col">
+            <label for="Email" class="mb-2">Выберите тариф</label>
+            <select
+              style="
+                display: block;
+                width: 100%;
+                padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+                -moz-padding-start: calc(0.75rem - 3px);
+                color: #212529;
+                background-image: url(./images/down-chevron.png);
+                background-color: #fff;
+                background-repeat: no-repeat;
+                background-position: right 0.75rem center;
+                background-size: 16px 16px;
+                border: 1px solid #ced4da;
+                border-radius: 0.375rem;
+                transition: border-color 0.15s ease-in-out,
+                  box-shadow 0.15s ease-in-out;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+              "
+              class=""
+              aria-label="Default select example"
+            >
+              <option selected>Выберите тариф</option>
+              <option value="1">Free</option>
+              <option value="2">Standart</option>
+              <option value="3">Standart+</option>
+              <option value="4">Premium</option>
+              <option value="5">Premium+</option>
+            </select>
+          </div>
+          <div style="position: relative" class="px-4 pb-4 flex flex-col">
+            <label for="Email" class="mb-2">Пароль</label>
+            <input
+              style="
+                display: block;
+                width: 100%;
+                padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+                -moz-padding-start: calc(0.75rem - 3px);
+                color: #212529;
+                background-color: #fff;
+                background-position: right 0.75rem center;
+                background-size: 16px 16px;
+                border: 1px solid #ced4da;
+                border-radius: 0.375rem;
+                transition: border-color 0.15s ease-in-out,
+                  box-shadow 0.15s ease-in-out;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+              "
+              placeholder="Пароль"
+              class=""
+              type="password"
+              aria-label="Default select example"
+            />
+          </div>
+          <div style="position: relative" class="px-4 flex flex-col">
+            <label for="Email" class="mb-2">Повторите пароль</label>
+            <input
+              style="
+                display: block;
+                width: 100%;
+                padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+                -moz-padding-start: calc(0.75rem - 3px);
+                color: #212529;
+                background-color: #fff;
+                background-position: right 0.75rem center;
+                background-size: 16px 16px;
+                border: 1px solid #ced4da;
+                border-radius: 0.375rem;
+                transition: border-color 0.15s ease-in-out,
+                  box-shadow 0.15s ease-in-out;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+              "
+              placeholder="Повторите пароль"
+              class=""
+              type="password"
+              aria-label="Default select example"
+            />
+          </div>
+
+          <div class="p-4 flex justify-end gap-3">
+            <button
+              type="button"
+              class="bg-[#6c757d] px-4 py-2 text-white rounded-md"
+              data-bs-dismiss="modal"
+            >
+              Закрыть
+            </button>
+            <button
+              type="button"
+              class="bg-[#B0CE66] px-4 py-2 text-white rounded-md"
+            >
+              Выбрать
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="ratePopup"
+      style="background: rgba(109, 100, 67, 0.48); display: none"
+      class="w-screen h-screen top-0 fixed"
+    >
+      <div class="relative h-full w-full">
+        <div
+          class="w-[90vw] md:w-[500px] bg-white rounded-2xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute"
+        >
+          <div
+            class="p-4 text-[20px] font-medium flex justify-between items-center"
+          >
+            <span>Оставить отзыв </span>
+            <span
+              id="close_submit"
+              class="text-gray-500 text-[30px] cursor-pointer"
+              >x</span
+            >
+          </div>
+          <div style="position: relative" class="px-4 pb-4 flex flex-col">
+            <label for="Email" class="mb-2">Имя</label>
+            <input
+              style="
+                display: block;
+                width: 100%;
+                padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+                -moz-padding-start: calc(0.75rem - 3px);
+                color: #212529;
+                background-color: #fff;
+                background-position: right 0.75rem center;
+                background-size: 16px 16px;
+                border: 1px solid #ced4da;
+                border-radius: 0.375rem;
+                transition: border-color 0.15s ease-in-out,
+                  box-shadow 0.15s ease-in-out;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+              "
+              placeholder="Имя"
+              class=""
+              aria-label="Default select example"
+            />
+          </div>
+          <div style="position: relative" class="px-4 pb-4 flex flex-col">
+            <label for="Email" class="mb-2">Фамилия</label>
+            <input
+              style="
+                display: block;
+                width: 100%;
+                padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+                -moz-padding-start: calc(0.75rem - 3px);
+                color: #212529;
+                background-color: #fff;
+                background-position: right 0.75rem center;
+                background-size: 16px 16px;
+                border: 1px solid #ced4da;
+                border-radius: 0.375rem;
+                transition: border-color 0.15s ease-in-out,
+                  box-shadow 0.15s ease-in-out;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+              "
+              placeholder="Фамилия"
+              class=""
+              aria-label="Default select example"
+            />
+          </div>
+          <div style="position: relative" class="px-4 pb-4 flex flex-col">
+            <label for="Email" class="mb-2">Город</label>
+            <input
+              style="
+                display: block;
+                width: 100%;
+                padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+                -moz-padding-start: calc(0.75rem - 3px);
+                color: #212529;
+                background-color: #fff;
+                background-position: right 0.75rem center;
+                background-size: 16px 16px;
+                border: 1px solid #ced4da;
+                border-radius: 0.375rem;
+                transition: border-color 0.15s ease-in-out,
+                  box-shadow 0.15s ease-in-out;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+              "
+              placeholder="Город"
+              class=""
+              aria-label="Default select example"
+            />
+          </div>
+          <textarea
+            name=""
+            id=""
+            placeholder="Напишите что-нибудь"
+            class="w-[91%] md:w-[468px] h-[100px] px-3 py-2 rounded-md mx-4 mb-4 border border-gray-500"
+          ></textarea>
+
+          <div class="p-4 flex justify-end gap-3">
+            <button
+              type="button"
+              class="bg-[#6c757d] px-4 py-2 text-white rounded-md"
+              data-bs-dismiss="modal"
+            >
+              Закрыть
+            </button>
+            <button
+              type="button"
+              class="bg-[#B0CE66] px-4 py-2 text-white rounded-md"
+            >
+              Выбрать
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="privacyPopup"
+      style="background: rgba(109, 100, 67, 0.48); display: none"
+      class="w-screen h-screen top-0 fixed"
+    >
+      <div class="h-screen overflow-auto py-[155px]">
+        <div
+          class="w-[80vw] mx-auto bg-white py-[58px] md:px-[98px] px-[22px] rounded-3xl"
+        >
+          <div class="font-bold text-2xl font-gilroy text-center">
+            Политика обработки персональных данных
+          </div>
+          <div class="mt-11 text-[#828282]">
+            1. Что регулирует настоящая политика конфиденциальности Настоящая
+            политика конфиденциальности (далее — Политика) действует в отношении
+            всей информации, включая персональные данные в понимании применимого
+            законодательства (далее — «Персональная информация»), которую ООО
+            «ЯНДЕКС» и/или его аффилированные лица, в том числе входящие в одну
+            группу с ООО «ЯНДЕКС» (далее — «Яндекс»), могут получить о Вас в
+            процессе использования Вами любых сайтов, программ, продуктов и/или
+            сервисов Яндекса (далее вместе — «Сервисы»), информацию о которых Вы
+            можете найти на сайтах yandex.ru, yandex.com, yandex.by, yandex.kz,
+            yandex.com.tr, yandex.co.il и других принадлежащих Яндексу сайтах
+            (далее вместе — «Сайты»), а также в ходе исполнения Яндексом / его
+            аффилированными лицами любых соглашений и договоров, заключенных с
+            Вами в связи с использованием Вами Сервисов. Яндекс может также
+            получать Персональную информацию от своих партнеров (далее —
+            «Партнеры»), сайты, программы, продукты или сервисы которых Вы
+            используете (например, от рекламодателей Яндекса или служб такси),
+            из других источников с общедоступными персональными данными. В
+            соответствующих случаях передача Персональной информации возможна
+            только в случаях, установленных применимым законодательством, и
+            осуществляется на основании специальных договоров между Яндексом и
+            каждым из Партнеров. Пожалуйста, обратите внимание, что
+            использование любого из Сайтов и/или Сервисов может регулироваться
+            дополнительными условиями, которые могут вносить в настоящую
+            Политику изменения и/или дополнения, и/или иметь специальные условия
+            в отношении персональной информации, размещенные в соответствующих
+            разделах документов для таких Сайтов /или Сервисов. 2. Кто
+            обрабатывает информацию Для обеспечения использования Вами Сайтов и
+            Сервисов Ваша Персональная информация собирается и используется
+            Яндексом, в том числе включая общество с ограниченной
+            ответственностью «ЯНДЕКС», юридическое лицо, созданное по
+            законодательству Российской Федерации и зарегистрированное по
+            адресу: 119021, Россия, Москва, ул. Льва Толстого, д. 16 (ООО
+            «ЯНДЕКС»), или его аффилированным лицом, предоставляющим
+            соответствующий Сервис в иных юрисдикциях. С информацией о том,
+            какое лицо предоставляет тот или иной Сервис, Вы можете ознакомиться
+            в условиях использования соответствующего Сервиса. Для пользователей
+            (за исключением пользователей сервисов Yango, Yandex.Taxi, Deli),
+            находящихся на территории Европейской экономической зоны (ЕЭЗ) или
+            Швейцарии, Яндекс представлен на территории ЕЭЗ и Швейцарии
+            компанией Global DC Oy, юридическим лицом, созданным по
+            законодательству Финляндии, зарегистрированным по адресу:
+            Морееникату 6, 04600 Мянтсяля, Финляндия (Moreenikatu 6, 04600
+            Mäntsälä, Suomi). Для пользователей, находящихся на территории
+            Израиля, Яндекс представлен на территории компаниями Yandex.Go
+            Israel Ltd, юридическим лицом, созданным по законодательству
+            Израиля, зарегистрированным по адресу: 148 Menachem Begin St., Tel
+            Aviv, Israel 6492104, Yango.Taxi Ltd., юридическим лицом, созданным
+            по законодательству Израиля, зарегистрированным по адресу: 148
+            Menachem Begin St., Tel Aviv, Israel 6492104, и Yango Market Israel
+            Ltd., юридическим лицом, созданным по законодательству Израиля,
+            зарегистрированным по адресу: 114 Yigal Alon, Tel Aviv, Israel
+            6744320. 3. Какова цель данной Политики Защита Вашей Персональной
+            информации и Вашей конфиденциальности чрезвычайно важны для Яндекса.
+            Поэтому при использовании Вами Сайтов и Сервисов Яндекс защищает и
+            обрабатывает Вашу Персональную информацию в строгом соответствии с
+            применимым законодательством. Следуя нашим обязанностям защищать
+            Вашу Персональную информацию, в этой Политике мы хотели бы наиболее
+            прозрачно проинформировать Вас о следующих моментах: (a) зачем и как
+            Яндекс собирает и использует («обрабатывает») Вашу Персональную
+            информацию, когда Вы используете Сайты и/или Сервисы; (b) какова
+            роль и обязанности Яндекса как юридического лица, принимающего
+            решение о том, зачем и как обрабатывать Вашу Персональную
+            информацию; (c) какие инструменты Вы можете использовать для
+            сокращения объема собираемой Яндексом Персональной информации о Вас;
+            (d) каковы Ваши права в рамках проводимой обработки Персональной
+            информации.
+          </div>
+          <div
+            class="mt-[66px] mb-[150px] bg-[#B0CE66] rounded-2xl py-[27px] px-[38px] text-white mx-auto w-fit text-center cursor-pointer"
+          >
+            Согласен с политика обработки персональных данных
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var burger = document.getElementById("burger");
+    var close = document.getElementById("close");
+    var tarif = document.getElementById("tarif2");
+    var submit = document.getElementById("submit");
+    var privacy = document.getElementById("privacy");
+    var rate = document.getElementById("rate");
+    var tarifPopup = document.getElementById("tarifPopup");
+    var tarifPopup_main = document.getElementById("tarifPopup_main");
+    var close_tarif = document.getElementById("close_tarif");
+
+    rate.addEventListener("click", function (params) {
+      document.getElementById("ratePopup").style.display = "block";
+    });
+    privacy.addEventListener("click", function (params) {
+      document.getElementById("privacyPopup").style.display = "block";
+    });
+    submit.addEventListener("click", function (params) {
+      document.getElementById("submitPopup").style.display = "block";
+    });
+
+    close_tarif.addEventListener("click", function () {
+      tarifPopup.style.display = "none";
+    });
+    tarifPopup.addEventListener("click", function () {
+      window.addEventListener("click", (e) => {
+        if (
+          !tarifPopup_main.contains(e.target) &&
+          tarifPopup.style.display == "block"
+        ) {
+          console.log("none");
+          location.reload();
+          console.log(tarifPopup, "1");
+        }
+        // console.log(tarifPopup, "1");
+      });
+    });
+
+    tarif.addEventListener("click", function (e) {
+      e.preventDefault();
+      tarifPopup.style.display = "block";
+      console.log(tarifPopup, "2");
+    });
+
+    burger.addEventListener("click", function () {
+      document.getElementById("mobile-menu").style.display = "flex";
+    });
+    close.addEventListener("click", function () {
+      document.getElementById("mobile-menu").style.display = "none";
+    });
+
+    const buttonRight = document.getElementById("slideRight");
+    const buttonLeft = document.getElementById("slideLeft");
+
+    const buttonRight2 = document.getElementById("slideRight2");
+    const buttonLeft2 = document.getElementById("slideLeft2");
+
+    buttonRight.onclick = function () {
+      document.getElementById("container").scrollLeft += 200;
+    };
+    buttonLeft.onclick = function () {
+      document.getElementById("container").scrollLeft -= 200;
+    };
+    buttonRight2.onclick = function () {
+      document.getElementById("container2").scrollLeft += 200;
+    };
+    buttonLeft2.onclick = function () {
+      document.getElementById("container2").scrollLeft -= 200;
+    };
+  </script>
+  <script src="./tailwind.config.js"></script>
+</html>

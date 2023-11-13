@@ -1,0 +1,339 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy/Gilroy-Regular.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy/Gilroy-Semibold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy/Gilroy-Regular.ttf");
+    font-weight: 500;
+}
+body {
+}
+
+body {
+    font-family: "Gilroy", sans-serif;
+}
+
+.head-txt{
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 39px;
+color: #000000;
+margin: 0 auto;
+}
+.btn-head{
+padding: 16px 24px;
+background: transparent;
+gap: 10px;
+border: 1px solid rgba(176, 206, 102, 0.4);
+border-radius: 12px;
+flex: none;
+order: 1;
+flex-grow: 0;
+margin-left: 10px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #B0CE66;
+}
+.tarif-head{
+	background: #6D6443;
+border-radius: 6px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height, or 131% */
+margin: 0 10px;
+letter-spacing: 0.1px;
+padding: 5px 10px;
+color: #FFFFFF;
+}
+.tarif-txt{
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height, or 150% */
+
+
+color: #6A6A6A;
+}
+
+/*progress*/
+.imgprogress{
+width: 100%;
+
+background: #FFFFFF;
+border-radius: 24px;
+}
+.img-add{
+width: 100%;
+border: 1px dashed #CCD1D9;
+border-radius: 24px;
+}
+.txt-foto{
+	font-family: 'Inter';
+font-style: normal;
+font-weight: 400!important;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #000000;
+margin-left: 10px;
+
+}
+.dropbox{
+border: 1px dashed #CCD1D9;
+border-radius: 24px;
+height: 100%;
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+}
+.dropbox::before {
+    content: '+';
+    margin: 0 auto;
+    font-family: 'SF Pro Rounded';
+font-style: normal;
+font-weight: 300;
+font-size: 96px;
+line-height: 115px;
+color: #B0CE66;
+}
+.tarif_card{
+border-radius: 24px;
+height: 100%;
+background: #fff;
+padding: 15px;
+}
+.tarif-card-txt{
+	font-family: 'Gilroy';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 26px;
+
+color: #000000;
+}
+.tarif-price{
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 77px;
+color: #000000;
+}
+.tarif-price-txt{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+color: #6A6A6A;
+}
+.tarif-card-content{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+color: #6A6A6A;
+}
+.tarif-card-date{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+color: #000;
+}
+.tarif-card-btn{
+background: #B0CE66;
+border-radius: 16px;
+justify-content: center;
+align-items: center;
+padding: 27px 38px;
+gap: 10px;
+color: #fff;
+border: none;
+}
+.graf-btn{
+border: 1px solid rgba(176, 206, 102, 0.4);
+border-radius: 12px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+color: #B0CE66;
+}
+/*end progress*/
+.btn-f{
+	border:none;
+  }
+  .modal-title{
+	font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  /* identical to box height */
+
+
+  color: #000000;
+  }
+  .form-label{
+	font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.1px;
+
+  color: #1D1D1F;
+  }
+  .btn-form{
+	background: #B0CE66!important;
+	background-color: #B0CE66!important;
+	color: #fff!important;
+  }
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+	background-color: green!important;
+  }
+
+  .custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 255, 0, 0.25)
+  }
+  .custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 0, 0, 0.25)!important
+  }
+  .custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+	background-color: #C8FFC8!important;
+  }
+ /*профиль*/
+ .prof-h{
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+/* identical to box height */
+
+
+color: #000000;
+ }
+ /*end профиль*/
+
+/* DISHES */
+.dishes {
+    display: flex;
+    flex-wrap: wrap;
+}
+.dish-card {
+    padding: .8rem;
+    width: 20%;
+}
+.dish-card .image-wrapper {
+    width: 100%;
+    height: 10rem;
+    background-size: cover;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.dish-card .name {
+    margin-top: .8rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.page-item.active .page-link {
+    background-color: #B0CE66 !important;
+    border-color: #B0CE66 !important;
+}
+.line {
+    width: 100%;
+    border-bottom: #B0CE66 solid 4px;
+    margin: 1rem 0;
+}
+@media (max-width: 1000px) {
+    .dish-card {
+        width: 25%;
+    }
+}
+@media (max-width: 800px) {
+    .dish-card {
+        width: 33.333%;
+    }
+}
+@media (max-width: 600px) {
+    .dish-card {
+        width: 50%;
+    }
+}
+/* End DISHES */
+.date-button{
+  background: #FFFFFF;
+border: 1px solid rgba(176, 206, 102, 0.4);
+border-radius: 12px;
+padding: 16px;
+}
+.date-txt{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #B0CE66;
+}
+.calculate-p{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* or 150% */
+
+letter-spacing: 0.1px;
+
+color: #AAB2BD;
+}
+.calculate-h{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height, or 117% */
+
+letter-spacing: 0.1px;
+
+color: #000000;
+}
+.calculate-check{
+    border: 1px solid #000!important;
+}
+.count-dish {
+    padding: 0 0 15px;
+}
+.count-dish button {
+
+}

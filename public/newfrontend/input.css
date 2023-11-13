@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 400;
+
+  src: url("../fonts/Gilroy-Regular.ttf");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 700;
+  src: url("../fonts/Gilroy-Bold.ttf");
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.font-gilroy {
+  font-family: "Gilroy";
+}
