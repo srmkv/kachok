@@ -163,7 +163,10 @@
                                                 data-bs-target="#modalStatistic"><i class="fas fa-plus"
                                                     aria-hidden="true"></i>&nbsp;&nbsp;Добавить</button>
                                         </div>
-
+                                        <div>
+                                            <button class="graf-btn btn-sm mb-0" onclick="removeStat()"><i class="fas fa-trash"
+                                                    aria-hidden="true"></i>&nbsp;&nbsp;Удалить</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="card-body p-3">
@@ -184,6 +187,20 @@
                 @endsection
                 @push('dashboard')
                     <script>
+
+                        function removeStat() {
+                            fetch('/user/statistics/destroy', {
+                                method: 'DELETE',
+                                headers: {
+                                    "X-CSRF-Token": "{!! csrf_token() !!}"
+                                }
+                            })
+                            .then(res => res.text())
+                            .then(res => {
+                                window.location.reload()
+                            })
+                        }
+
                         window.onload = chart1()
 
                         function chart1() {

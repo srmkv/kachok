@@ -1069,8 +1069,12 @@
 
             <div class="col-xs-12 col-sm-3 text-center">
                 <div class="copyright">
-                    &copy;ИП Столяренко Б.А.
+                    &copy;ИП Столяренко Б.А.<br>
+                    ИНН: 360103632826<br>
+                    ОРГНИП: 323366800029835<br>
+                    Email: info@pro-trenirovki.ru
                 </div>
+                
             </div>
 
             <div class="col-xs-12  col-sm-3 text-center">

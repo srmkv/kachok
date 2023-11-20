@@ -158,6 +158,7 @@ Route::middleware(["auth", "verified"])->controller(UserManagementController::cl
         Route::post('/user/password/change', 'passwordChange')->name('password.change');
         Route::post('/user/profile/photo/store', 'profilePhotoStore')->name('profile.photo.store');
         Route::post('/user/statistics/store', 'statisticStore')->name('statistics.store');
+        Route::delete('/user/statistics/destroy', 'statisticDestroy')->name('statistics.destroy');
         Route::post('/user/value/store', 'valueStore')->name('value.store');
         Route::get('/user/tools', 'tools')->name('tools');
         Route::get('/user/consultations', 'consultations')->name('consultations');

@@ -6,6 +6,11 @@
                     ©  ИП Столяренко Б.А., 2022-<script>
                         document.write(new Date().getFullYear())
                     </script>
+                 <br>
+                    ИНН: 360103632826<br>
+                    ОРГНИП: 323366800029835<br>
+                    Email: info@pro-trenirovki.ru
+                
                 </div>
                 
             </div>

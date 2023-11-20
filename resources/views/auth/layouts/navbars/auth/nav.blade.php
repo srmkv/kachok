@@ -60,7 +60,19 @@
         <form action="{{route('statistics.store')}}" method="post" enctype="multipart/form-data">
           @csrf
       <div class="modal-body">
-       <div class="mb-3">
+        <div class="mb-3">
+          <label for="ForNameStatistics" class="form-label">Названия графика</label>
+          <select class="form-control" name="name" id="ForNameStatistics">
+            @php
+              $objectives = App\Models\Objective::all();
+            @endphp
+            @foreach ($objectives as $obj)
+              <option value="{{ $obj->name_obj }}">{{ $obj->name_obj }}</option>
+            @endforeach
+          </select>
+          
+        </div>
+       {{-- <div class="mb-3">
          <label for="ForNameStatistics" class="form-label">Названия графика</label>
           <input type="text" name="name" class="form-control" id="ForNameStatistics" placeholder="Названия графика">
         </div>
@@ -68,7 +80,7 @@
         <div class="mb-3">
          <label for="ForVariable" class="form-label">Переменная</label>
           <input type="text" name="variable" class="form-control" id="ForVariable" placeholder="Переменная">
-        </div>
+        </div> --}}
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
@@ -210,7 +222,7 @@
       <div class="modal-body">
        <div class="mb-3">
          <label for="FormWeight" class="form-label">Обхват талии</label>
-          <input type="number" name="waist" class="form-control" id="FormWeight" placeholder="Вес">
+          <input type="number" name="waist" class="form-control" id="FormWeight" placeholder="Сантиметры">
         </div>
        <div class="mb-3">
          <label for="ForDateWaist" class="form-label">Дата</label>
@@ -244,7 +256,7 @@
       <div class="modal-body">
        <div class="mb-3">
          <label for="FormWeight" class="form-label">{{$statistic->variable}}</label>
-          <input type="number" name="value" class="form-control" id="FormWeight" placeholder="Вес">
+          <input type="number" name="value" class="form-control" id="FormWeight" placeholder="Ед.изм">
         </div>
        <div class="mb-3">
          <label for="ForDateWaist" class="form-label">Дата</label>

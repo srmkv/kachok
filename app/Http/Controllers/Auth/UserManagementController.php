@@ -239,7 +239,7 @@ class UserManagementController extends Controller
         request()->validate(
             [
                 'name' => 'required',
-                'variable' => 'required',
+                // 'variable' => 'required',
             ]
         );
 
@@ -247,12 +247,20 @@ class UserManagementController extends Controller
             [
                 'user_id' => Auth::user()->id,
                 'name' => $request->name,
-                'variable' => $request->variable,
+                // 'variable' => $request->variable,
             ]
         );
 
 
         return redirect()->route('progress');
+    }
+
+    public function statisticDestroy()
+    {
+        $stat = Statistics::where('user_id', auth()->user()->id)->first();
+        if( $stat->delete() ) {
+            StatisticValues::where('user_id', auth()->user()->id)->delete();
+        }
     }
 
     public function valueStore(Request $request)
