@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Notifications\Messages\MailMessage;
-
+use Dsoloview\YandexCaptcha\Rules\YandexCaptcha; 
 class LoginRegisterController extends Controller
 {
     /**
@@ -50,7 +50,8 @@ class LoginRegisterController extends Controller
         $request->validate(
             [
                 'email' => 'required|email|max:250|unique:users',
-                'password' => 'required|confirmed'
+                'password' => 'required|confirmed',
+                'smart-token' => ['required', new YandexCaptcha] , 
             ]
         );
 
@@ -85,6 +86,7 @@ class LoginRegisterController extends Controller
                 'email' => "Неверное имя пользователя или пароль."
             ]
         )->onlyInput('email');
+       
 
     }
 
@@ -109,7 +111,8 @@ class LoginRegisterController extends Controller
         $credentials = $request->validate(
             [
                 'email' => 'required|email',
-                'password' => 'required'
+                'password' => 'required',
+               
             ]
         );
 

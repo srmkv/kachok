@@ -215,7 +215,7 @@
                             <input type="number" name="kg" class="form-control" id="ForGram" placeholder="0">
                         </div>
                         <div class="mb-3">
-                            <label for="ForGram" class="form-label">Павтор</label>
+                            <label for="ForGram" class="form-label">Повтор</label>
                             <input type="number" name="repeat" class="form-control" id="ForGram" placeholder="0">
                         </div>
 

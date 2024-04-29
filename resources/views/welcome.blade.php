@@ -17,7 +17,7 @@
     <meta property="og:site_name" content="protrenerovki">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
-
+    <script src="https://smartcaptcha.yandexcloud.net/captcha.js" defer></script>
     <!-- Favicons -->
     <link href="{{asset('assets/img/logo/Logo.png')}}" rel="icon">
     <link href="{{asset('assets/img/logo/Logo.png')}}" rel="apple-touch-icon">
@@ -210,7 +210,7 @@
 
             <div class="row d-flex align-items-center mg-auto d-flex justify-content-center aos-init aos-animate">
                 <div class="col-lg-4 text-end txt-c align-middle">
-                    <h3>Уже тренируются с нами +10 835</h3>
+                    <h3>Уже тренируются с нами +{{ $users + 476 }}</h3>
 
                 </div>
                 <div class="col-lg-4 text-center align-middle">
@@ -1086,7 +1086,7 @@
                     персональных данных
                 </button>
             </div>
-
+           
 
         </div>
     </div>
@@ -1295,6 +1295,8 @@
                             <span class="text-danger">{{ $errors->first('name') }}</span>
                         @endif
                     </div>
+                    
+                    <x-yandex-captcha></x-yandex-captcha>  
                      <div class="mb-3 text-center">
                 <input class="form-check-input" type="checkbox" value="" onclick="showButtonreg()" id="flexCheckreg">
                 <label class="form-check-label" for="flexCheckreg">
@@ -1341,7 +1343,9 @@
                             <span class="text-danger">{{ $errors->first('name') }}</span>
                         @endif
                     </div>
+                    
                 </div>
+                
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
                     <button type="submit" class="btn btn-form">Авторизация</button>
@@ -1351,7 +1355,21 @@
     </div>
 </div>
 <!--modal-->
-
+<!-- Modal видео -->
+<div class="modal modal-lg fade" id="Modalvideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalvideo" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <video controls autoplay muted >
+        <!-- Путь к вашему видеофайлу -->
+        <source src="assets/img/Pro-trenirovki.webm" type="video/mp4">
+        Ваш браузер не поддерживает тег video.
+    </video>
+    <button class="btn btn-form" onclick="closePopup()">Закрыть и не показывать</button>
+        </div>
+    </div>
+</div>
+ 
+<!--modal-->
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a>
 <!--cookies-->
@@ -1490,8 +1508,33 @@ var  cookies = document.getElementById("cookies");
 cookies.style.display = "none";
 });
 
-</script>
 
+</script>
+<script>
+    // Функция для закрытия всплывающего окна и установки куки
+    function closePopup() {
+    $('#Modalvideo').modal('hide');
+
+    // Устанавливаем куку с именем 'popupShown', значение 'true' и сроком действия до закрытия браузера
+    document.cookie = 'popupShown=true; expires=0; path=/';
+}   
+
+
+    // Функция для проверки, нужно ли показывать всплывающее окно
+    function shouldShowPopup() {
+        // Читаем значение куки с именем 'popupShown'
+        var popupShown = document.cookie.replace(/(?:(?:^|.*;\s*)popupShown\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+        // Если кука не существует, то возвращаем true (показываем окно)
+        return popupShown !== 'true';
+    }
+
+    // Отображаем всплывающее окно, если нужно
+    document.addEventListener('DOMContentLoaded', function() {
+        if (shouldShowPopup()) {
+            $('#Modalvideo').modal('show');
+        }
+    });
+</script>
 </body>
 
 </html>

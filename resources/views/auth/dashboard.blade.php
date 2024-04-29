@@ -400,7 +400,7 @@
 
                                         },
                                         {
-                                            label: "Талия ТОП-1",
+                                            label: "Обхват ТОП-1",
                                             tension: 0.4,
                                             hidden: true,
                                             borderWidth: 0,
@@ -413,7 +413,7 @@
                                             maxBarThickness: 6
                                         },
                                         {
-                                            label: "Талия ТОП-3",
+                                            label: "Обхват ТОП-3",
                                             tension: 0.4,
                                             hidden: true,
                                             borderWidth: 0,
@@ -426,7 +426,7 @@
                                             maxBarThickness: 6
                                         },
                                         {
-                                            label: "Талия ТОП-5",
+                                            label: "Обхват ТОП-5",
                                             tension: 0.4,
                                             hidden: true,
                                             borderWidth: 0,

@@ -575,12 +575,17 @@ class UserManagementController extends Controller
                 $losDayCount = $calendar['losDayCount'];
         
                 $program = Program::where('user_id', Auth::user()->id)->first();
-                $firstDay = TrainingDay::where('user_id', Auth::user()->id)->whereMonth('date', $calendar['start']->format('m'))->first();
-                $days = TrainingDay::where('user_id', Auth::user()->id)->whereMonth('date', $calendar['start']->format('m'))->OrderBy('date', 'asc')->get();
-
+                $firstDay = TrainingDay::where('user_id', Auth::user()->id)->whereMonth('date', $calendar['start']->format('m'))->whereYear('date', date('Y'))->first();
+                $days = TrainingDay::where('user_id', Auth::user()->id)->whereMonth('date', $calendar['start']->format('m'))->whereYear('date', date('Y'))->OrderBy('date', 'asc')->get();
+// dd($calendar['end']->format('d'));
                 $lostDaysMonth = $firstDay ? (int) date('d',strtotime($firstDay->date)) : $calendar['end']->format('d');
+                $daysInMonth = (int) $calendar['end']->format('d');
+                // dd($daysInMonth);
                 // dd(compact('losDayCount', 'lostDaysMonth', 'firstDay', 'days', 'program', 'startOfMonth'));
-                return view('auth.training.index', compact('losDayCount', 'lostDaysMonth', 'firstDay', 'days', 'program', 'startOfMonth'));
+                // dd(compact('startOfMonth', 'daysInMonth'));
+                // dd(compact('losDayCount', 'lostDaysMonth', 'firstDay', 'days', 'program', 'startOfMonth'));
+
+                return view('auth.training.index', compact('losDayCount', 'lostDaysMonth', 'firstDay', 'days', 'program', 'startOfMonth', 'daysInMonth'));
 
                 
             } else {
@@ -591,15 +596,17 @@ class UserManagementController extends Controller
         }
 
 
-        $days = TrainingDay::where('user_id', Auth::user()->id)->whereMonth('date', now()->format('m'))->OrderBy('date', 'asc')->get();
+        $days = TrainingDay::where('user_id', Auth::user()->id)->whereMonth('date', now()->format('m'))->whereYear('date', date('Y'))->OrderBy('date', 'asc')->get();
         $program = Program::where('user_id', Auth::user()->id)->first();
 
         if ($program) {
-            $firstDay = TrainingDay::where('user_id', Auth::user()->id)->whereMonth('date', now()->format('m'))->first();
+            $firstDay = TrainingDay::where('user_id', Auth::user()->id)->whereMonth('date', now()->format('m'))->whereYear('date', date('Y'))->first();
             
             if( $firstDay ) {
                 // $firstDay->date = "2023-07-21";
                 $startOfMonth = Carbon::parse($firstDay->date)->startOfMonth();
+                $daysInMonth = Carbon::parse($firstDay->date)->daysInMonth;
+                
                 $firstOfMonthDay = date("D", $startOfMonth->timestamp);
 
                 $firstDay = $firstDay->date;
@@ -610,7 +617,7 @@ class UserManagementController extends Controller
 
                 // dd($losDayCount, $lostDaysMonth, $firstDay);
                 // dd(compact('losDayCount', 'lostDaysMonth', 'firstDay', 'days', 'program', 'startOfMonth'));
-                return view('auth.training.index', compact('losDayCount', 'lostDaysMonth', 'firstDay', 'days', 'program', 'startOfMonth'));
+                return view('auth.training.index', compact('losDayCount', 'lostDaysMonth', 'firstDay', 'days', 'program', 'startOfMonth', 'daysInMonth'));
             }
             
         }

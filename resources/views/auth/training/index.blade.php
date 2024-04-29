@@ -178,22 +178,27 @@
                             </li>
                         @endfor
                     @endisset
-                        @forelse ($days as $day)
-                            @if ($day->description == 'отдых')
-                                <li>
-                                    <div>
-                                        <span
-                                            class="{{ date('d', strtotime($day->date)) == now()->format('d') ? 'active today' : '' }}">
-                                            {{ date('d', strtotime($day->date)) }}
+                        @php
+                            $i = 1;
+                        @endphp
+                        @if( $days->count() != 1 )
+                            @forelse ($days as $day)
+                                @if( date('d', strtotime($day->date)) != $i )
+                                    @for ($i = $i; $i < date('d', strtotime($day->date)); $i++)
+                                    <li>
+                                        <span class="{{ 
+                                            $i == now()->format('d') &&
+                                            $startOfMonth == now()->startOfMonth() ? 'active today' : '' }}">
+                                            {{ $i }}
                                         </span>
-                                    </div>
-                                    <div class="days_par">
-                                        <span class="relax text-nowrap date_d">{{ $day->description }}</span>
-                                    </div>
-                                </li>
-                            @else
-                                <a href="{{ route('training.day', $day->id) }}">
-                                    <li style="background: #adcf6e54;">
+                                        <div class="days_par">
+                                            <span class="relax text-nowrap date_d">отдых</span>
+                                        </div>
+                                    </li>
+                                    @endfor
+                                @endif
+                                @if ($day->description == 'отдых')
+                                    <li>
                                         <div>
                                             <span
                                                 class="{{ date('d', strtotime($day->date)) == now()->format('d') ? 'active today' : '' }}">
@@ -201,13 +206,77 @@
                                             </span>
                                         </div>
                                         <div class="days_par">
-                                            <span class="active text-nowrap date_d">{{ $day->description }}</span>
+                                            <span class="relax text-nowrap date_d">{{ $day->description }}</span>
                                         </div>
                                     </li>
-                                </a>
-                            @endif
-                        @empty
-                        @endforelse
+                                @else
+                                    <a href="{{ route('training.day', $day->id) }}">
+                                        <li style="background: #adcf6e54;">
+                                            <div>
+                                                <span
+                                                    class="{{ date('d', strtotime($day->date)) == now()->format('d') ? 'active today' : '' }}">
+                                                    {{ date('d', strtotime($day->date)) }}
+                                                </span>
+                                            </div>
+                                            <div class="days_par">
+                                                <span class="active text-nowrap date_d">{{ $day->description }}</span>
+                                            </div>
+                                        </li>
+                                    </a>
+                                @endif
+                                @php
+                                    $i++;
+                                @endphp
+                            @empty
+                            @endforelse
+                        @else
+                            @forelse ($days as $day)
+                                @if ($day->description == 'отдых')
+                                    <li>
+                                        <div>
+                                            <span
+                                                class="{{ date('d', strtotime($day->date)) == now()->format('d') ? 'active today' : '' }}">
+                                                {{ date('d', strtotime($day->date)) }}
+                                            </span>
+                                        </div>
+                                        <div class="days_par">
+                                            <span class="relax text-nowrap date_d">{{ $day->description }}</span>
+                                        </div>
+                                    </li>
+                                @else
+                                    <a href="{{ route('training.day', $day->id) }}">
+                                        <li style="background: #adcf6e54;">
+                                            <div>
+                                                <span
+                                                    class="{{ date('d', strtotime($day->date)) == now()->format('d') ? 'active today' : '' }}">
+                                                    {{ date('d', strtotime($day->date)) }}
+                                                </span>
+                                            </div>
+                                            <div class="days_par">
+                                                <span class="active text-nowrap date_d">{{ $day->description }}</span>
+                                            </div>
+                                        </li>
+                                    </a>
+                                @endif
+                                @php
+                                    $i++;
+                                @endphp
+                            @empty
+                            @endforelse
+
+                                @for ($i = $i; $i < $daysInMonth; $i++)
+                                <li>
+                                    <span class="{{ 
+                                        $i == now()->format('d') &&
+                                        $startOfMonth == now()->startOfMonth() ? 'active today' : '' }}">
+                                        {{ $i }}
+                                    </span>
+                                    <div class="days_par">
+                                        <span class="relax text-nowrap date_d">отдых</span>
+                                    </div>
+                                </li>
+                                @endfor
+                        @endif
                     </ul>
                 </table>
             @endisset

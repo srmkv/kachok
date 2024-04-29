@@ -542,7 +542,7 @@
         // Hide last popups
         function hidePopup(button_id, popup_id) {
             document.getElementById(button_id).addEventListener("click", hideLastPopup);
-
+        
             function hideLastPopup() {
                 document.getElementById(popup_id).style.display = "none";
             }

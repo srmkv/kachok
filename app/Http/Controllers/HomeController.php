@@ -6,17 +6,19 @@ use App\Models\Comment;
 use App\Models\Contact;
 use App\Models\Tarif;
 use App\Models\Trainer;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function home()
     {
+        $users = User::count();
         $trainers = Trainer::OrderBy('sort', 'asc')->get();
         $comments = Comment::OrderBy('sort', 'asc')->get();
         $tarifs = Tarif::OrderBy('sort', 'asc')->get();
 
-        return view('welcome', compact('trainers', 'comments', 'tarifs'));
+        return view('welcome', compact('trainers', 'comments', 'tarifs', 'users'));
     }
 
     public function contactStore(Request $request)
@@ -38,6 +40,6 @@ class HomeController extends Controller
         return redirect()->route('home')
             ->with('success', 'Спасибо за ваше сообщение! Оно успешно отправлено.');
     }
-
+    
 
 }

@@ -19,7 +19,9 @@ use App\Http\Controllers\Auth\LoginRegisterController;
 use App\Http\Controllers\Auth\UserManagementController;
 use App\Http\Controllers\StatisticsController;
 use App\Http\Controllers\DocumentsController;
+use App\Http\Controllers\SchoolController;
 use App\Http\Controllers\Admin\DocumentsAdmController;
+
 // Route::get('laravel_ten_test_mail', function () {
 //     $data = "We are learning Laravel 10 mail from laravelia.com";
 
@@ -161,6 +163,7 @@ Route::middleware(["auth", "verified"])->controller(UserManagementController::cl
         Route::delete('/user/statistics/destroy', 'statisticDestroy')->name('statistics.destroy');
         Route::post('/user/value/store', 'valueStore')->name('value.store');
         Route::get('/user/tools', 'tools')->name('tools');
+
         Route::get('/user/consultations', 'consultations')->name('consultations');
         Route::get('/user/rates', 'rates')->name('rates');
         Route::get('/user/workouts', 'workouts')->name('workouts');
@@ -215,6 +218,8 @@ Route::controller(LoginRegisterController::class)->group(
 
 //Route::get('/dashboard', [StatisticsController::class, 'createGrafic'])->name('dashboard');
 Route::get('/documents', [DocumentsController::class, 'documents'])->name('documents.index');
+Route::get('/school', [SchoolController::class, 'school'])->name('school.index');
+
 Route::get('register', function() { 
     return redirect()->route('home');
 });

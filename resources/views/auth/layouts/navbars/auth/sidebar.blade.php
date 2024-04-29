@@ -74,7 +74,17 @@
           <span class="nav-link-text ms-1">Мои данные</span>
         </a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="/school" target="_blank">
+          <span class="nav-link-text ms-1">Обучение</span>
+        </a>
+      </li>
 
+
+       <button class="graf-btn btn-sm mb-0 nav-item" data-bs-toggle="modal" data-bs-target="#donat">Помощь проекту
+                </button>
+
+      
     </ul>
   </div>
 </aside>
